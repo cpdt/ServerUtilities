@@ -47,36 +47,12 @@ void function FSCC_Init() {
 	command.Callback = FSCC_CommandCallback_Help
 	FSCC_RegisterCommand( "help", command )
 
-	// !mods
-	command.m_UsageUser = "mods <page#/all>"
-	command.m_Description = "Lists mods installed on the server."
-	command.m_Abbreviations = []
-	command.Callback = FSCC_CommandCallback_Mods
-	FSCC_RegisterCommand( "mods", command )
-
-	// !name
-	command.m_UsageUser = "name"
-	command.m_Description = "Returns the server name."
-	command.Callback = FSCC_CommandCallback_Name
-	FSCC_RegisterCommand( "name", command )
-
-	// !owner
-	command.m_UsageUser = "owner"
-	command.m_Description = "Returns contact information of the owner."
-	command.Callback = FSCC_CommandCallback_Owner
-	FSCC_RegisterCommand( "owner", command )
-
 	// !rules
-	command.m_UsageUser = "rules <page#/all>"
+	command.m_UsageUser = "rules"
 	command.m_Description = "Lists server rules."
+	command.m_Abbreviations = []
 	command.Callback = FSCC_CommandCallback_Rules
 	FSCC_RegisterCommand( "rules", command )
-
-	// !discord
-	command.m_UsageUser = "discord"
-	command.m_Description = "Returns a discord link."
-	command.Callback = FSCC_CommandCallback_Discord
-	FSCC_RegisterCommand( "discord", command )
 }
 
 /**

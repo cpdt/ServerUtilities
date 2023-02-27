@@ -15,13 +15,13 @@ string announce
  * Gets called after the map is loaded
 */
 void function FSU_Init() {
-	colorTable["header"]    <- "\x1b[38:5:214m"
-	colorTable["highlight"] <- "\x1b[36m"
-	colorTable["text"]      <- "\x1b[38:5:152m"
+	colorTable["header"]    <- "\x1b[93m"
+	colorTable["highlight"] <- "\x1b[95m"
+	colorTable["text"]      <- "\x1b[0m"
 	colorTable["admin"]     <- "\x1b[94m"
 	colorTable["owner"]     <- "\x1b[92m"
-	colorTable["error"]     <- "\x1b[38;5;203m"
-	colorTable["success"]   <- "\x1b[38;5;192m"
+	colorTable["error"]     <- "\x1b[91m"
+	colorTable["success"]   <- "\x1b[92m"
 	colorTable["announce"]  <- "\x1b[38;5;183m"
 
 	foreach(string item in split(GetConVarString( "FSU_COLOR_THEME" ), "," )){
