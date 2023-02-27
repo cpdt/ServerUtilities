@@ -5,6 +5,11 @@
 	"LoadPriority": 2,
 	"ConVars": [
 		{
+			"Name": "FSM_SERVER_NAME",
+			"DefaultValue": "Your Local Bunnings",
+			"HelpString": "Server name to show in information."
+		},
+		{
 			"Name": "FSM_ENABLE_INFO_COMMAND",
 			"DefaultValue": "1",
 			"HelpString": "Enables/Disables the !info command for viewing the info page again."

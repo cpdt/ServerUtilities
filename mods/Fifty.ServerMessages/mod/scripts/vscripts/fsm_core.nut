@@ -33,7 +33,7 @@ void function FSM_OnClientConnected( entity player ) {
  * @param player The player to send the message to
 */
 void function FSM_PrintWelcomeMessage( entity player ) {
-	string server_name = GetConVarString("ns_server_name")
+	string server_name = GetConVarString("FSM_SERVER_NAME")
 	FSU_PrivateChatMessage(player, "Welcome to %H" + server_name + "%T, where lowest prices are just the beginning.")
 	FSU_PrivateChatMessage(player, "%FRules: Keep chat chill, do not cheat or work around the game's controls.")
 	FSU_PrivateChatMessage(player, "Report rule breakers on the Northstar Discord - %Hdiscord.gg/northstar")
