@@ -20,6 +20,16 @@
 			"Name": "FSU_COLOR_THEME",
 			"DefaultValue": "",
 			"HelpString": "Custom chat UI colors. Supported color types are: header, highlight, text, admin, owner, error, success, announce. To change a color, enter the name, an equals sign and a hex color code."
+		},
+		{
+			"Name": "FSV_ENABLE_RUI",
+			"DefaultValue": "1",
+			"HelpString": "Enables/Disables displaying notifications and statuses of votes in progress using RUI. Ported from Fifty.ServerVote for MentalEdge.BetterTeamBalance."
+		},
+		{
+			"Name": "FSV_ENABLE_CHATUI",
+			"DefaultValue": "1",
+			"HelpString": "Enables/Disables displaying notifications and statuses of votes in progress using chat messages. Ported from Fifty.ServerVote for MentalEdge.BetterTeamBalance."
 		}
 	],
 	"Scripts": [
